@@ -1,0 +1,9 @@
+<br><br><br><br>
+<% patterns = ["Volume", "LightsOff", "LightsOn", "MicrophonePulse", "FastMicrophonePulse", "Ants", "Spin", "Rainbow", "RainbowCandy", "Fade", "CrazyColorStrobe", "ColorStrobe", "Strobe", "TestPixel"] 
+%>
+
+<% patterns.each do |p| %>
+<div>
+  <a href="/<%=p.underscore%>"><button><%=p%></button></a>
+</div>
+<% end %>
